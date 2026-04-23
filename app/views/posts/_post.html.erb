@@ -1,0 +1,17 @@
+<div id="<%= dom_id post %>" class="space-y-2">
+  <div>
+    <span class="text-sm font-medium text-gray-500">Title:</span>
+    <h2 class="text-xl font-semibold text-gray-900"><%= post.title %></h2>
+  </div>
+
+  <div>
+    <span class="text-sm font-medium text-gray-500">Content:</span>
+    <p class="text-gray-700 mt-1"><%= post.content %></p>
+  </div>
+
+  <div>
+    <span class="text-sm font-medium text-gray-500">User:</span>
+    <span class="text-gray-700"><%= post.user.email %></span>
+  </div>
+
+</div>

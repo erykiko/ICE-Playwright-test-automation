@@ -1,0 +1,14 @@
+<% content_for :title, "Posts" %>
+
+<h1 class="text-3xl font-bold text-gray-900 mb-6">Posts</h1>
+
+<div id="posts" class="space-y-4">
+  <% @posts.each do |post| %>
+    <div class="bg-white shadow rounded-lg p-6 hover:shadow-md transition">
+      <%= render post %>
+      <div class="mt-4">
+        <%= link_to "Show this post", post, class: "text-blue-600 hover:text-blue-800 font-medium" %>
+      </div>
+    </div>
+  <% end %>
+</div>
